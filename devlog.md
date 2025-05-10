@@ -15,3 +15,20 @@ Represented as a 2D list of rows, each containing cells of the following types:
 * Succeed only if the actions lead from s to any e without walking off the map or into walls
 * Work even when the action list is an unbound variable
 * Fail on invalid mazes (e.g., multiple start cells or none at all)
+
+## May 10, 2025 5:12pm
+### Approach
+* Write helper predicates to:
+  * Get cell values/content (i.e. f, w, s, or e)
+  * Count start cells for validation
+  * Find the start cell 
+  * Apply movement actions
+  * Check move validity
+ 
+* Validation Logic:
+  * Early fail if there is not exactly one start point
+  * Fail if any action leads out of bounds or into a wall
+  * Only succeed if the path ends on an exit cell
+ 
+* Test Plan:
+  * Use example.pl and test.pl to verify program is working as expected   
