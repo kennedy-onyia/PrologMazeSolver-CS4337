@@ -1,7 +1,7 @@
 # DevLog
 ## May 10, 2025 - 1:23 pm
 ### Project Overview
-The goal of this project is to implement a maze-solving program in Prolog using a predicate called find_exit/2. The predicate takes a maze and either verifies if a given list of actions successfully leads from a start (s) to an exit (e), or finds a valid path if the list is unbound.
+The goal of this project is to implement a maze-solving program in Prolog using a predicate called find_exit. The predicate takes a maze and either verifies if a given list of actions successfully leads from a start (s) to an exit (e), or finds a valid path if the list is unbound.
 
 ### Maze Features
 Represented as a 2D list of rows, each containing cells of the following types:
